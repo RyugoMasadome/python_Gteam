@@ -2,4 +2,5 @@ import sys
 
 args = sys.argv
 
-print('I don\'t like {0}'.format(args[1]))
+#format文を使った変数の埋め込み
+print(f'I don\'t like {args[1]}')
