@@ -1,5 +1,8 @@
+# Output for arguments
+
 import sys
+
 args = sys.argv
 
 name = args[1:]
-print('Hello,', ' '.join(name))
+print('Hello '+' '.join(name)+' !', end="")
