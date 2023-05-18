@@ -1,2 +1,5 @@
-# add comment for check push restriction
-print('Hello Ryugo Masadome!')
+import sys
+args = sys.argv
+
+name = args[1:]
+print('Hello,', ' '.join(name))
