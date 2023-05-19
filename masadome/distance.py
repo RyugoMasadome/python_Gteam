@@ -18,8 +18,10 @@ distances = {
 
 assert departure in distances and arrival in distances
 
+# 絶対値の取得
 dist = abs(distances[arrival]-distances[departure])
 
+# 小数第3位で四捨五入
 dist = Decimal(str(dist)).quantize(Decimal("0.00"), ROUND_HALF_UP)
 
 print(dist)
