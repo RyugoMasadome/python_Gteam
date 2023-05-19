@@ -4,10 +4,7 @@ args = sys.argv
 
 now = 0
 
-while now != 100:
-    now = now + int(args[1])
-    if now > 100:
-        print('Over!', end="")
-        break
+assert int(args[1]) > 0, '制約外の値が含まれています'
 
-if now == 100: print('Just 100!', end="")
+
+print('Just 100!' if 100 % int(args[1]) == 0 else 'Over!', end='')
