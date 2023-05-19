@@ -20,13 +20,16 @@ if hm_class == "果物類":
         for i in range(len(fruits)):
             if (name_h == fruits[i]) and (hinmoku[name_h] - price_down > 0):
                 hinmoku[name_h] -= price_down
-
+            elif name_h == fruits[i]:
+                hinmoku[name_h] = 1
 #酒類名のとき
-elif hm_class == "酒類名":
+elif hm_class == "酒類":
     for name_h in hinmoku.keys():
         for i in range(len(alcohol)):
             if (name_h == alcohol[i]) and (hinmoku[name_h] - price_down > 0):
                 hinmoku[name_h] -= price_down
+            elif name_h == alcohol[i]:
+                hinmoku[name_h] = 1
 
 #上記以外のとき
 else:
@@ -34,5 +37,7 @@ else:
         for i in range(len(noodles)):
             if (name_h == noodles[i]) and (hinmoku[name_h] - price_down > 0):
                 hinmoku[name_h] -= price_down
+            elif name_h == noodles[i]:
+                hinmoku[name_h] = 1
 
 print(hinmoku, end="")
