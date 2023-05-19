@@ -9,7 +9,7 @@ def sansyutsu (get):
         tax_fee_under_border = border_fee * 0.1
         fee_over_border = get - border_fee
         tax_fee_over_border = fee_over_border * 0.2
-        total_tax = tax_fee_under_border + tax_fee_over_border
+        total_tax = totalfee - tax_fee_under_border - tax_fee_over_border
         return int(total_tax)
     else:
         total_tax = totalfee * 0.9

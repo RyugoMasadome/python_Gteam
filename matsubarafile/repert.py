@@ -1,6 +1,5 @@
 import sys
 args = sys.argv
-
 number = int(args[1])
 sum = 0
 rupe_checker = 0 
