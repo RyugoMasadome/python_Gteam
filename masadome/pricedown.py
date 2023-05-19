@@ -26,7 +26,7 @@ discount = int(args[2])
 selected_genre = genre[picked_genre]
 
 # 品物のキー一覧を取得し
-for k in goods.keys():
+for k in list(goods.keys()):
     # もしタプルの中に品物のキーがあったら
     if k in selected_genre:
         # 品物の値段を変更する
