@@ -1,2 +1,3 @@
-#Hello Worldを表示
-print("Hello, World!")
+#py
+print("hello, world!")
+print("park")
